@@ -1,0 +1,53 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Environments
+.env/
+.venv/
+env/
+venv/
+
+# Data files (optional - comment out if you want to include)
+data/raw/
+data/processed/
+
+# Model files (optional - comment out if you want to include)
+models/
+
+# VSCode settings folder
+.vscode/
+
+# macOS system files
+.DS_Store
+
+# Logs and temp files
+*.log
+*.tmp
+
+# Python egg info
+*.egg-info/
+dist/
+build/
+.eggs/
+
+# Pytest cache
+.pytest_cache/
+
+# Coverage reports
+htmlcov/
+.coverage
+
+# Jupyter Notebook metadata (clear outputs before commit to keep repo clean)
+*.nbconvert.ipynb
+
+# Ignore any large files accidentally added
+*.h5
+*.ckpt
+*.pt
+*.joblib
+*.pkl
