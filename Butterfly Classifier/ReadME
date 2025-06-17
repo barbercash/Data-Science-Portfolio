@@ -1,0 +1,72 @@
+# README.md
+
+# 🦋 Butterfly Species Image Classifier
+
+This project is a convolutional neural network (CNN)-based image classification system built to identify butterfly species from images. It was developed using a data set from Kaggle, which contains over 1,000 labeled images spanning 75 unique butterfly categories.
+
+---
+
+## 📁 Project Structure
+```
+butterfly_classifier/
+├── data/
+│   ├── train/                  # Training images
+│   ├── test/                   # Testing images
+│   ├── Training_set.csv        # Training image labels
+│   └── Testing_set.csv         # Test filenames
+├── models/
+│   ├── butterfly_model.h5      # Trained model
+│   └── label_encoder.pkl       # Label encoder
+├── outputs/
+│   └── submission.csv          # Final test predictions
+├── src/
+│   ├── train.py                # Model training script
+│   └── predict.py              # Inference and submission script
+├── requirements.txt
+└── README.md
+```
+
+---
+
+## 🚀 How to Run
+
+### 1. Install Dependencies
+```bash
+pip install -r requirements.txt
+```
+
+### 2. Train the Model
+```bash
+python src/train.py
+```
+This will train the model and save it under `models/`.
+
+### 3. Predict and Generate Submission
+```bash
+python src/predict.py
+```
+This will generate a `submission.csv` file inside `outputs/`.
+
+---
+
+## 🧠 Model Architecture
+- CNN with Conv2D → MaxPooling2D blocks
+- Dense layers for classification
+- Softmax activation for 75 butterfly classes
+- Trained with `categorical_crossentropy` loss and `Adam` optimizer
+
+---
+
+## 📌 Dataset Source
+- [Data Sprint 107 - Butterfly Image Classification](https://www.kaggle.com/datasets/phucthaiv02/butterfly-image-classification)
+
+---
+
+## 👤 Author
+**Cash Barber**  
+Feel free to connect via [GitHub](https://github.com/barbercash) or [LinkedIn](https://linkedin.com/in/cash-griffith-barber).
+
+---
+
+## 📜 License
+This project is for educational use only.
