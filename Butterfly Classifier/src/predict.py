@@ -6,7 +6,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.models import load_model
 
 # Load model and label encoder
-model = load_model("models/butterfly_model.h5")
+model = load_model("models/best_model.keras")
 with open("models/label_encoder.pkl", "rb") as f:
     le = pickle.load(f)
 

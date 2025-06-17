@@ -1,0 +1,42 @@
+# Python cache files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment folder (adjust if your env folder has a different name)
+myenv/
+env/
+venv/
+*.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data folders (usually large, not committed)
+data/train/
+data/test/
+
+# Model files
+models/
+*.h5
+*.keras
+*.pkl
+
+# Output folders and files
+outputs/
+*.csv
+
+# Logs
+*.log
+
+# Mac OS system files
+.DS_Store
+
+# Windows system files
+Thumbs.db
+
+# VSCode settings folder
+.vscode/
+
+# PyCharm settings folder
+.idea/
